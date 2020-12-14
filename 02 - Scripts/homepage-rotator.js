@@ -155,22 +155,6 @@
                                     }
                                 }
                             })[0];
-
-                            // mySwiper.on('slideChange', function () {
-                            //     // var index = mySwiper.activeIndex;
-                            //     // $('.slider .tabs a').removeClass('active');
-                            //     // $('.slider .tabs a').eq(index).addClass('active');
-                            // });
-
-                            // mySwiper.on('touchStart touchMove', function () {
-                            //     clearInterval(swiperInterval);
-
-                            //     swiperInterval = setupInterval(mySwiper);
-
-                            //     mySwiper.pagination.update();
-                            // });
-
-                            // mySwiper.update();
                         }
                     });
                 }
