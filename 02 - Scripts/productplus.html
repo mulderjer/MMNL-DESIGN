@@ -1,0 +1,365 @@
+// desktop
+<style>
+.free-products
+{
+    font-size: 14px;
+    clear: both;
+    width: 100%;
+}
+
+.free-products h2
+{
+    display: block;
+    color: #000000;
+    padding-top: 8px;
+    margin: 0 8px 5px;
+}
+
+.free-products a
+{
+    display: block;
+    padding: 6px 10px;
+    line-height: 1.4;
+    border-top: 1px dashed #E6E8E9;
+}
+
+.free-products a:last-child
+{
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #E6E8E9;
+}
+
+.free-products a span.free-label
+{
+    font-weight: 800;
+    color: #29A954;
+    margin-left: 21px;
+}
+
+.free-products .product-title, .free-products a span.free-label
+{
+    display: block;
+}
+
+.free-products a:hover .free-label
+{
+    color: #DF0000;
+}
+
+.free-products a span.plus-label
+{
+    float: left;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 1;
+    padding: 0 10px 0 0;
+}
+</style>
+<script>
+(function()
+{
+    $(document).ready(function()
+    {
+        // get main product info
+        var productDataVar = window["product" + $("span[itemprop=sku]").text()];
+        var productDataEl = $("input[name=contentSpotInfo-product_detail-top]");
+
+        // combine main product data with products to be added
+        var addProducts = [];
+        addProducts.push(
+        ///////////////////// EDIT THIS DATA /////////////////////
+        {
+            catEntryId: "5146919",
+            categoryId: "772741",
+            name: "QWARE Screen Protector voor Nintendo Switch",
+            id: "1568993",
+            brand: "QWARE",
+            price: "0.00", // don't edit this: 0.00
+            quantity: 1 // don't edit this: 1
+        },
+        {
+            catEntryId: "5146549",
+            categoryId: "772742",
+            name: "QWARE Docking Station voor Nintendo Switch",
+            id: "1568990",
+            brand: "QWARE",
+            price: "0.00", // don't edit this: 0.00
+            quantity: 1 // don't edit this: 1
+        },
+        {
+            catEntryId: "6527749",
+            categoryId: "772741",
+            name: "QWARE Case voor Nintendo Switch",
+            id: "1613291",
+            brand: "QWARE",
+            price: "0.00", // don't edit this: 0.00
+            quantity: 1 // don't edit this: 1
+        },
+        ///////////////////// DON'T EDIT BELOW /////////////////////
+        {
+            catEntryId: productDataEl.attr("data-catEntryId"),
+            categoryId: productDataEl.attr("data-categoryId"),
+            name: productDataVar.name,
+            id: productDataVar.id,
+            price: productDataVar.price,
+            brand: productDataVar.brand,
+            ean: productDataVar.ean,
+            dimension25: productDataVar.dimension25,
+            dimension26: productDataVar.dimension26,
+            dimension24: productDataVar.dimension24,
+            category: productDataVar.category,
+            dimension9: productDataVar.dimension9,
+            dimension10: productDataVar.dimension10,
+            quantity: 1
+        });
+
+        var payload, productHtml;
+        payload = productHtml = "";
+
+        for (var i = 0; i < addProducts.length; i++)
+        {
+            var categoryId = addProducts[i].categoryId;
+            var catEntryId = addProducts[i].catEntryId;
+
+            payload += "&categoryId_" + (i + 1) + "=" + categoryId + "&catEntryId_" + (i + 1) + "=" + catEntryId;
+
+            if (i < (addProducts.length - 1))
+            {
+                productHtml += '<a href="/catentry/' + addProducts[i].id + '" target="_blank"><span class="product-title"><span class="plus-label">+</span>' + addProducts[i].name + '</span><span class="free-label">Cadeau</span></a>';
+            }
+
+            // remove properties from object because we don't need them for tracking
+            delete addProducts[i].categoryId;
+            delete addProducts[i].catEntryId;
+        }
+
+        // add proposition to price box
+        $('<div class="free-products"><h2>Tijdelijk meegeleverd</h2>' + productHtml + '</div>').insertAfter(".price-sidebar .price-button");
+
+        // remove original add to cart buttons
+        $(".price-sidebar .add-to-cart").remove();
+
+        // create custom add to cart buttons
+        $('<a href="#" class="button large block add-to-cart"><span>Bestel nu</span></a>').prependTo(".price-sidebar .price-button").click(function()
+        {
+            $.ajax(
+        	{
+        		url: "/webapp/wcs/stores/servlet/MultiChannelOrderCatalogEntryAdd?storeId=10259&langId=-11" + payload,
+        		method: "post",
+                complete: function()
+        		{
+                    dataLayer.push(
+    				{
+    					event: "EECaddToCart",
+    					eventCategory: "Enhanced eCommerce",
+    					eventAction: "Add to cart",
+    					eventLabel: "Product Detail View",
+    					eventValue: 0,
+    					ecommerce:
+    					{
+    						currencyCode: "EUR",
+    						add:
+    						{
+    							products: addProducts
+    						}
+    					}
+    				});
+
+        			// forward to basket
+        			window.location.href = "/webapp/wcs/stores/servlet/MultiChannelDisplayBasket?storeId=10259&langId=-11";
+        		}
+        	});
+
+        	return false;
+        });
+    });
+})();
+</script>
+
+
+
+
+
+
+
+// mobile
+<style>
+.free-products
+{
+    font-size: 14px;
+    clear: both;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.free-products h2
+{
+    display: block;
+    color: #000000;
+    padding-top: 8px;
+    margin: 0 8px 5px;
+}
+
+.free-products a
+{
+    display: block;
+    color: #000000;
+    padding: 6px 10px;
+    line-height: 1.4;
+    border-top: 1px dashed #E6E8E9;
+}
+
+.free-products a:last-child
+{
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #E6E8E9;
+}
+
+.free-products a span.free-label
+{
+    font-weight: 800;
+    color: #29A954;
+    margin-left: 21px;
+}
+
+.free-products .product-title, .free-products a span.free-label
+{
+    display: block;
+}
+
+.free-products a:hover .free-label
+{
+    color: #DF0000;
+}
+
+.free-products a span.plus-label
+{
+    float: left;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 1;
+    padding: 0 10px 0 0;
+}
+</style>
+<script>
+(function()
+{
+    $(document).ready(function()
+    {
+        if (gtm.properties.productInfo)
+        {
+            // get main product info
+            var productDataVar = JSON.parse(gtm.properties.productInfo);
+
+            // combine main product data with products to be added
+            var addProducts = [];
+            addProducts.push(
+            ///////////////////// EDIT THIS DATA /////////////////////
+            {
+                catEntryId: "5146919",
+                categoryId: "772741",
+                name: "QWARE Screen Protector voor Nintendo Switch",
+                id: "1568993",
+                brand: "QWARE",
+                price: "0.00", // don't edit this: 0.00
+                quantity: 1 // don't edit this: 1
+            },
+            {
+                catEntryId: "5146549",
+                categoryId: "772742",
+                name: "QWARE Docking Station voor Nintendo Switch",
+                id: "1568990",
+                brand: "QWARE",
+                price: "0.00", // don't edit this: 0.00
+                quantity: 1 // don't edit this: 1
+            },
+            {
+                catEntryId: "6527749",
+                categoryId: "772741",
+                name: "QWARE Case voor Nintendo Switch",
+                id: "1613291",
+                brand: "QWARE",
+                price: "0.00", // don't edit this: 0.00
+                quantity: 1 // don't edit this: 1
+            },
+            ///////////////////// DON'T EDIT BELOW /////////////////////
+            {
+                catEntryId: $("meta[property=catEntryId]").attr("content"),
+                categoryId: $("input[name=categoryId]").val(),
+                name: productDataVar.name,
+                id: productDataVar.id,
+                price: productDataVar.price,
+                brand: productDataVar.brand,
+                ean: productDataVar.ean,
+                dimension25: productDataVar.dimension25,
+                dimension26: productDataVar.dimension26,
+                dimension24: productDataVar.dimension24,
+                category: productDataVar.category,
+                dimension9: productDataVar.dimension9,
+                dimension10: productDataVar.dimension10,
+                quantity: 1
+            });
+
+            var payload, productHtml;
+            payload = productHtml = "";
+
+            for (var i = 0; i < addProducts.length; i++)
+            {
+                var categoryId = addProducts[i].categoryId;
+                var catEntryId = addProducts[i].catEntryId;
+
+                payload += "&categoryId_" + (i + 1) + "=" + categoryId + "&catEntryId_" + (i + 1) + "=" + catEntryId;
+
+                if (i < (addProducts.length - 1))
+                {
+                    productHtml += '<a href="/catentry/' + addProducts[i].id + '" target="_blank"><span class="product-title"><span class="plus-label">+</span>' + addProducts[i].name + '</span><span class="free-label">Cadeau</span></a>';
+                }
+
+                // remove properties from object because we don't need them for tracking
+                delete addProducts[i].categoryId;
+                delete addProducts[i].catEntryId;
+            }
+
+            // add proposition to price box
+            $('<div class="free-products"><h2>Tijdelijk meegeleverd</h2>' + productHtml + '</div>').insertAfter("#add-to-basket-buttons");
+
+            // remove original add to cart buttons
+            $("#addToBasket").remove();
+
+            // create custom add to cart buttons
+            $('<a href="#" class="button background-type-1 button-add-to-basket primary-button"><span>Bestel nu</span></a>').prependTo("#add-to-basket-buttons").click(function()
+            {
+                $.ajax(
+            	{
+            		url: "/webapp/wcs/stores/servlet/MultiChannelOrderCatalogEntryAdd?storeId=10259&langId=-11" + payload,
+            		method: "post",
+                    complete: function()
+            		{
+                        dataLayer.push(
+        				{
+        					event: "EECaddToCart",
+        					eventCategory: "Enhanced eCommerce",
+        					eventAction: "Add to cart",
+        					eventLabel: "Product Detail View",
+        					eventValue: 0,
+        					ecommerce:
+        					{
+        						currencyCode: "EUR",
+        						add:
+        						{
+        							products: addProducts
+        						}
+        					}
+        				});
+
+            			// forward to basket
+            			window.location.href = "/webapp/wcs/stores/servlet/MultiChannelDisplayBasket?storeId=10259&langId=-11";
+            		}
+            	});
+
+            	return false;
+            });
+        }
+    });
+})();
+</script>
