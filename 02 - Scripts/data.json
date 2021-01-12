@@ -89,6 +89,96 @@
                     "href": "https://www.mediamarkt.nl/nl/shop/schermreparatie.html"
                 }
             ]
+        },
+        "2021-01-13T00:00:00" : {
+            "contentBig": {
+                "topic": "Mega Deals",
+                "logo_src": "",
+                "head": "<span>Mega</span> Deals",
+                "sub": "Profiteer van de beste deals bij MediaMarkt",
+                "brands": [],
+                "img_src": "https://www.mediamarkt.nl/static/assets/img/homepage-redesign-test/week2/MegaDeals_HomePage_MastHead_Big_560x280.png",
+                "href": "https://www.mediamarkt.nl/nl/shop/mega-deals.html",
+                "bgColor": "",
+                "bgColorCustom": "",
+                "bgImage": "",
+                "textColor": ""
+            },
+            "contentSmall": [
+                {
+                    "topic": "Bezorgservice",
+                    "head": "MediaMarkt <span>bezorgservice</span>",
+                    "sub": "Voor 14:00 besteld, vandaag in huis",
+                    "img": "https://www.mediamarkt.nl/static/assets/img/homepage-redesign-test/week1/Bezorging_HomePage_MastHead_Small_260x130.png",
+                    "href": "https://www.mediamarkt.nl/nl/shop/bestelling-bezorgen.html"
+                },
+                {
+                    "topic": "Google Nest",
+                    "head": "Google: <span>Nieuw jaar</span> nieuwe ik",
+                    "sub": "Hey Google, zet een timer van 1 minuut voor push-ups. Nu tot 50% korting.",
+                    "img": "https://www.mediamarkt.nl/static/assets/img/homepage-redesign-test/week2/Google_HomePage_MastHead_Small_260x130.png",
+                    "href": "https://www.mediamarkt.nl/nl/category/_google-nest-772594.html"
+                },
+                {
+                    "topic": "Red Night",
+                    "head": "Red Night</br>Online Deals",
+                    "sub": "Van <span>woensdag 18:00</span> uur</br>Tot <span>donderdag 10:00</span> uur",
+                    "alt": true,
+                    "href": "https://www.mediamarkt.nl/nl/search.html?query=rednight&searchProfile=onlineshop&channel=mmnlnl&outlet=867"
+                },
+                {
+                    "topic": "Schermreparatie",
+                    "head": "Scherm van je <span>smartphone</span> kapot?",
+                    "sub": "Stuur je toestel gratis op naar ons reparatiecentrum",
+                    "img": "https://www.mediamarkt.nl/static/assets/img/homepage-redesign-test/week2/Schermreparatie_HomePage_MastHead_Small_260x130.png",
+                    "href": "https://www.mediamarkt.nl/nl/shop/schermreparatie.html"
+                }
+            ]
+        },
+        "2021-01-14T10:00:00" : {
+            "contentBig": {
+                "topic": "Mega Deals",
+                "logo_src": "",
+                "head": "<span>Mega</span> Deals",
+                "sub": "Profiteer van de beste deals bij MediaMarkt",
+                "brands": [],
+                "img_src": "https://www.mediamarkt.nl/static/assets/img/homepage-redesign-test/week2/MegaDeals_HomePage_MastHead_Big_560x280.png",
+                "href": "https://www.mediamarkt.nl/nl/shop/mega-deals.html",
+                "bgColor": "",
+                "bgColorCustom": "",
+                "bgImage": "",
+                "textColor": ""
+            },
+            "contentSmall": [
+                {
+                    "topic": "Bezorgservice",
+                    "head": "MediaMarkt <span>bezorgservice</span>",
+                    "sub": "Voor 14:00 besteld, vandaag in huis",
+                    "img": "https://www.mediamarkt.nl/static/assets/img/homepage-redesign-test/week1/Bezorging_HomePage_MastHead_Small_260x130.png",
+                    "href": "https://www.mediamarkt.nl/nl/shop/bestelling-bezorgen.html"
+                },
+                {
+                    "topic": "Google Nest",
+                    "head": "Google: <span>Nieuw jaar</span> nieuwe ik",
+                    "sub": "Hey Google, zet een timer van 1 minuut voor push-ups. Nu tot 50% korting.",
+                    "img": "https://www.mediamarkt.nl/static/assets/img/homepage-redesign-test/week2/Google_HomePage_MastHead_Small_260x130.png",
+                    "href": "https://www.mediamarkt.nl/nl/category/_google-nest-772594.html"
+                },
+                {
+                    "topic": "MM Adviseert",
+                    "head": "Vind jouw <span>ideale laptop</span>",
+                    "sub": "MediaMarkt adviseert je graag",
+                    "img": "https://www.mediamarkt.nl/static/assets/img/homepage-redesign-test/week2/MM-Adviseert_HomePage_MastHead_Small_260x130.png",
+                    "href": "https://www.mediamarkt.nl/nl/category/_mediamarkt-adviseert-laptops-778508.html"
+                },
+                {
+                    "topic": "Schermreparatie",
+                    "head": "Scherm van je <span>smartphone</span> kapot?",
+                    "sub": "Stuur je toestel gratis op naar ons reparatiecentrum",
+                    "img": "https://www.mediamarkt.nl/static/assets/img/homepage-redesign-test/week2/Schermreparatie_HomePage_MastHead_Small_260x130.png",
+                    "href": "https://www.mediamarkt.nl/nl/shop/schermreparatie.html"
+                }
+            ]
         }
     },
     "dayWeekDealsContent": {
