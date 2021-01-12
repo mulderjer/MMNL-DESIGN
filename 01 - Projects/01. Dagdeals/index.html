@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dagdeals: elke dag een andere deal | MediaMarkt</title>
+  <link rel="stylesheet" type="text/css" href="dagdeal-style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+  <meta name="robots" content="noindex,nofollow">
+</head>
+<body>
+
+  <div class="pageContainer">
+    <div class="countdownContainer">
+      <div class="title"><h1>Dag<span class="black">deal</span></h1></div>
+      <div class="countdown">
+        <div id="countdownTimer"></div>
+      </div>
+    </div>
+
+    <div class="productContainer">
+      <div class="productImage">
+        <img src="images/televisie.png" />
+      </div>
+
+      <div class="productInfo">
+        <div class="productSpecs">
+          <div class="productRow">
+            <div class="info productTitle">LG 55NANO806NA</div>
+          </div>
+          <div class="productRow">
+            <div class="info">Beeldscherm</div>
+            <div class="info">55 inch</div>
+          </div>
+          <div class="productRow">
+            <div class="info">Beeldresolutie</div>
+            <div class="info">Ultra HD 4K</div>
+          </div>
+          <div class="productRow">
+            <div class="info">Type</div>
+            <div class="info">Led-tv</div>
+          </div>
+          <div class="productRow">
+            <div class="info">Smart-tv</div>
+            <div class="info">Ja</div>
+          </div>
+          <div class="productRow">
+            <div class="info productLink"><a href="#">Meer over dit product &raquo;</a></div>
+          </div>
+        </div>
+
+        <div class="stockContainer">
+          <div class="productRow">
+            <div class="productInfo">
+              <div class="box infobox availability">
+                <ul>
+                  <li class="label-instock">Online op voorraad</li>
+                  <li class="online online-ndd online-verylowstock"><span class="label-cutoff"><span class="label-cutoff-time">Voor 23:30 besteld, <strong>morgen</strong> in huis</span><a href="#" data-layer="levertijd" class="info-link"><span class="icon icon-info"></span></a></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="productRow">
+            <div class="productInfo">
+              <div class="priceContainer">
+                <div class="oldPrice"><span class="amount">999.-</span></div>
+                <div class="newPrice">699.-</div>
+              </div>
+              <a href="#" class="button add-to-cart"><span>Bestel 'm direct</span></a>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+
+    <div class="textContainer">
+      <h2>Meteen op de hoogte zijn van de volgende dagdeal?</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae temporibus autem id dignissimos, explicabo saepe obcaecati repudiandae doloribus voluptate aspernatur consectetur accusantium dolorem tenetur sequi ab eos ratione quo voluptatum! explicabo saepe obcaecati repudiandae doloribus voluptate aspernatur consectetur accusantium dolorem tenetur sequi ab eos ratione quo voluptatum!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae temporibus autem id dignissimos, explicabo saepe obcaecati repudiandae doloribus voluptate aspernatur consectetur accusantium dolorem tenetur sequi ab eos ratione quo voluptatum! explicabo saepe obcaecati repudiandae doloribus voluptate aspernatur consectetur accusantium dolorem tenetur sequi ab eos ratione quo voluptatum!</p>
+    </div>
+
+  </div>
+
+  <script>
+    function ShowTime() {
+      var now = new Date();
+      var hrs = 23-now.getHours();
+      var mins = 60-now.getMinutes();
+      var secs = 60-now.getSeconds();
+      timeLeft = "<span class=\"black\">Nog</span> " +hrs+' uur, '+mins+' minuten, '+secs+' seconden';
+      $("#countdownTimer").html(timeLeft);
+    }
+    
+    var countdown;
+    function StopTime() {
+      clearInterval(countdown);
+    }
+    setInterval(ShowTime ,1000);
+  </script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+{
+    "masthead": {
+        "2021-01-04T00:00:00" : {
+            "contentBig": {
+                "topic": "Beste 20 van 2020",
+                "logo_src": "",
+                "head": "<span>20</span> beste deals<br><span>van 2020</span>",
+                "sub": "T/M 10 JANUARI",
+                "brands": [],
+                "img_src": "https://www.mediamarkt.nl/static/assets/img/homepage-redesign-test/week1/Beste20_HomePage_MastHead_Big_560x280.png",
+                "href": "https://www.mediamarkt.nl/nl/shop/beste-producten-afgelopen-jaar.html",
+                "bgColor": "",
+                "bgColorCustom": "",
+                "bgImage": "https://www.mediamarkt.nl/static/assets/img/homepage-redesign-test/week1/Beste20_HomePage_MastHead_Background_3840x1391.png",
+                "textColor": ""
+            },
+            "contentSmall": [
+                {
+                    "topic": "Samsung Moonshot",
+                    "head": "Samsung <span>Galaxy S20 Series</span>",
+                    "sub": "Nu tijdelijk 100.- retour",
+                    "img": "https://www.mediamarkt.nl/static/assets/img/homepage-redesign-test/week1/Samsung_HomePage_MastHead_Small_260x130.png",
+                    "href": "https://www.mediamarkt.nl/nl/category/_samsung-galaxy-s20-755129.html"
+                },
+                {
+                    "topic": "Bezorgservice",
+                    "head": "MediaMarkt <span>bezorgservice</span>",
+                    "sub": "Voor 14:00 besteld, vandaag in huis",
+                    "img": "https://www.mediamarkt.nl/static/assets/img/homepage-redesign-test/week1/Bezorging_HomePage_MastHead_Small_260x130.png",
+                    "href": "https://www.mediamarkt.nl/nl/shop/bestelling-bezorgen.html"
+                },
+                {
+                    "topic": "MM Adviseert",
+                    "head": "<span>Advies</span> nodig?",
+                    "sub": "MediaMarkt adviseert deze wasmachines",
+                    "img": "https://www.mediamarkt.nl/static/assets/img/homepage-redesign-test/week1/MM-Adviseert_HomePage_MastHead_Small_260x130.png",
+                    "href": "https://www.mediamarkt.nl/nl/category/_mediamarkt-adviseert-wasmachines-778509.html"
+                },
+                {
+                    "topic": "Telefoon abonnementen",
+                    "head": "De scherpste <span>deals</span>",
+                    "sub": "Telefoonabonnementen van verschillende providers",
+                    "img": "https://www.mediamarkt.nl/static/assets/img/homepage-redesign-test/week1/Telefoonabonnementen_HomePage_MastHead_Small_260x130.png",
+                    "href": "https://telefoonabonnementen.mediamarkt.nl"
+                }
+            ]
+        },
+        "2021-01-11T00:00:00" : {
+            "contentBig": {
+                "topic": "Mega Deals",
+                "logo_src": "",
+                "head": "<span>Mega</span> Deals",
+                "sub": "Profiteer van de beste deals bij MediaMarkt",
+                "brands": [],
+                "img_src": "https://www.mediamarkt.nl/static/assets/img/homepage-redesign-test/week2/MegaDeals_HomePage_MastHead_Big_560x280.png",
+                "href": "https://www.mediamarkt.nl/nl/shop/mega-deals.html",
+                "bgColor": "",
+                "bgColorCustom": "",
+                "bgImage": "",
+                "textColor": ""
+            },
+            "contentSmall": [
+                {
+                    "topic": "Bezorgservice",
+                    "head": "MediaMarkt <span>bezorgservice</span>",
+                    "sub": "Voor 14:00 besteld, vandaag in huis",
+                    "img": "https://www.mediamarkt.nl/static/assets/img/homepage-redesign-test/week1/Bezorging_HomePage_MastHead_Small_260x130.png",
+                    "href": "https://www.mediamarkt.nl/nl/shop/bestelling-bezorgen.html"
+                },
+                {
+                    "topic": "Google Nest",
+                    "head": "Google: <span>Nieuw jaar</span> nieuwe ik",
+                    "sub": "Hey Google, zet een timer van 1 minuut voor push-ups. Nu tot 50% korting.",
+                    "img": "https://www.mediamarkt.nl/static/assets/img/homepage-redesign-test/week2/Google_HomePage_MastHead_Small_260x130.png",
+                    "href": "https://www.mediamarkt.nl/nl/category/_google-nest-772594.html"
+                },
+                {
+                    "topic": "MM Adviseert",
+                    "head": "Vind jouw <span>ideale laptop</span>",
+                    "sub": "MediaMarkt adviseert je graag",
+                    "img": "https://www.mediamarkt.nl/static/assets/img/homepage-redesign-test/week2/MM-Adviseert_HomePage_MastHead_Small_260x130.png",
+                    "href": "https://www.mediamarkt.nl/nl/category/_mediamarkt-adviseert-laptops-778508.html"
+                },
+                {
+                    "topic": "Schermreparatie",
+                    "head": "Scherm van je <span>smartphone</span> kapot?",
+                    "sub": "Stuur je toestel gratis op naar ons reparatiecentrum",
+                    "img": "https://www.mediamarkt.nl/static/assets/img/homepage-redesign-test/week2/Schermreparatie_HomePage_MastHead_Small_260x130.png",
+                    "href": "https://www.mediamarkt.nl/nl/shop/schermreparatie.html"
+                }
+            ]
+        }
+    },
+    "dayWeekDealsContent": {
+        "2021-01-11T00:00:00": {
+            "dayDeal": {
+                "head": "LG DSN11RG",
+                "sub": "Met Wifi - Draadloze subwoofer - Met Bluetooth",
+                "price": "999.-",
+                "retailPrice": "1499.-",
+                "img": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_75169775/fee_786_587_png/LG-DSN11RG",
+                "href": "https://www.mediamarkt.nl/nl/product/_lg-dsn11rg-1661670.html?ga_query=1661670"
+            }
+        },
+        "2021-01-12T00:00:00": {
+            "dayDeal": {
+                "head": "SAMSUNG Galaxy A41",
+                "sub": "Geheugencapaciteit: 64 GB - Beeldschermdiagonaal (cm/inch): 15.45 cm / 6.1 inch",
+                "price": "219.-",
+                "retailPrice": "249.-",
+                "img": "https://www.mediamarkt.nl/static/assets/img/homepage-redesign-test/week2/12_1dagdeals_deals_homepage.png",
+                "href": "https://www.mediamarkt.nl/nl/product/_samsung-galaxy-a41-64-gb-zwart-1659796.html"
+            }
+        },
+        "2021-01-13T00:00:00": {
+            "dayDeal": {
+                "head": "MIELE TCD 450 WP",
+                "sub": "Vulgewicht drogen: 8 kg - Geluidsniveau: 66 dB - 12 wasprogramma's",
+                "price": "799.-",
+                "retailPrice": "1049.-",
+                "img": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_73179493/fee_52_41_png/MIELE-TCD-450-WP",
+                "href": "https://www.mediamarkt.nl/nl/product/_miele-tcd-450-wp-1654263.html"
+            }
+        },
+        "2021-01-14T00:00:00": {
+            "dayDeal": {
+                "head": "LG 65NANO866NA",
+                "sub": "Smart-tv - 65 inch - Led-tv",
+                "price": "988.-",
+                "retailPrice": "1249.-",
+                "img": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_75013054/fee_52_41_png/LG-65NANO866NA",
+                "href": "https://www.mediamarkt.nl/nl/product/_lg-65nano866na-1658356.html?ga_query=1658356"
+            }
+        },
+        "2021-01-15T00:00:00": {
+            "dayDeal": {
+                "head": "PHILIPS HUE Starterkit",
+                "sub": "Instelbare wittinten, 16 miljoen kleuren - Te bedienen met de app",
+                "price": "109.99",
+                "retailPrice": "145.99",
+                "img": "https://www.mediamarkt.nl/nl/product/_philips-hue-starterkit-wit-en-gekleurd-licht-gu10-1621432.html?ga_query=1621432#",
+                "href": "https://www.mediamarkt.nl/nl/product/_philips-hue-starterkit-wit-en-gekleurd-licht-gu10-1621432.html?ga_query=1621432"
+            }
+        },
+        "2021-01-16T00:00:00": {
+            "dayDeal": {
+                "head": "SEAGATE Expansion+ Portable 5TB",
+                "sub": "Externe harde schijf - 5TB - met USB 3.0-kabel",
+                "price": "95.-",
+                "retailPrice": "119.99",
+                "img": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_70430776/fee_52_41_png/SEAGATE-Expansion--Portable-5TB",
+                "href": "https://www.mediamarkt.nl/nl/product/_seagate-expansion-portable-5tb-1631710.html?ga_query=1631710"
+            }
+        },
+        "2021-01-17T00:00:00": {
+            "dayDeal": {
+                "head": "SAMSUNG VC2100 Anti-tangle Compact Blue",
+                "sub": "Zakloze stofzuiger - stofreservoir van 1.5 liter - gewicht van 4.3 kilogram",
+                "price": "77.-",
+                "retailPrice": "109.-",
+                "img": "https://assets.mmsrg.com/isr/166325/c1/-/pixelboxx-mss-74709541/fee_52_41_png/SAMSUNG-VC2100-Anti-tangle-Compact-Blue",
+                "href": "https://www.mediamarkt.nl/nl/product/_samsung-vc2100-anti-tangle-compact-blue-1497600.html?ga_query=1497600"
+            }
+        }
+    },
+    "sliderContent": {
+        "2021-01-04T00:00:00": [
+            {
+                "topic": "MediaMarkt Zakelijk",
+                "head": "Ontdek <span>MediaMarkt zakelijk</span>",
+                "sub": "Altijd advies en service op maat",
+                "btn": "Neem contact op",
+                "img": "https://www.mediamarkt.nl/static/assets/img/homepage-redesign-test/week1/Zakelijk_HomePage_Slider_620x220.png",
+                "imgbg": "",
+                "href": "https://www.mediamarkt.nl/nl/shop/zakelijk.html"
+            },    
+            {
+                "topic": "Nieuwsbrief",
+                "head": "Schrijf je nu in voor<span> onze nieuwsbrief</span>",
+                "sub": "En ontvang een 10.- kortingsvoucher",
+                "btn": "Inschrijven",
+                "img": "https://www.mediamarkt.nl/static/assets/img/homepage-redesign-test/week1/nieuwsbrief-slider.png",
+                "imgbg": "",
+                "href": "https://www.mediamarkt.nl/webapp/wcs/stores/servlet/MultiChannelMANewsletterRegister"
+            },
+            {
+                "topic": "MediaMarkt Club",
+                "head": "Join the <span>Club</span>",
+                "sub": "Meld je nu aan",
+                "btn": "Aanmelden",
+                "img": "https://www.mediamarkt.nl/static/assets/img/homepage-redesign-test/week1/MMclub-slider.png",
+                "imgbg": "",
+                "href": "https://www.mediamarkt.nl/nl/shop/mediamarkt-club-informatie.html"
+            }
+        ]
+    },
+    "highlightedSkus": {
+        "2021-01-04T00:00:00": [
+            "1635020",
+            "1676045",
+            "1614310",
+            "1671216",
+            "1662131",
+            "1659058"
+        ]
+    }
+}
