@@ -3,102 +3,123 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dagdeals: elke dag een andere deal | MediaMarkt</title>
+  <title>Dagdeal | MediaMarkt </title>
+  <meta name="description" content="Profiteer elke dag van een scherpe dagdeal bij MediaMarkt. Deze unieke aanbieding is alleen vandaag geldig. Bekijk het product hier en bestel direct!" />
   <link rel="stylesheet" type="text/css" href="dagdeal-style.css" />
+  <link rel="stylesheet" type="text/css" href="https://csscdn.redblue.de/msp/patternlibrary/deployable/static/style-red_af95546e3c64f536e81bf61cf8ddadf5cd0b3dbf-nofonts.min.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+  <script src="slider.js"></script>
   <meta name="robots" content="noindex,nofollow">
 </head>
 <body>
-
+  <div id="generic-page" class="wide">
+    <div class="header-wrapper">
+      <div class="d-justify t-justify header-container">
+        <div class="content-container">
+          <div class="title">
+            <h1><span class="red">Dag</span> Deal</h1>
+          </div>
+          <div class="t-wrapper">
+            <div class="countdown">
+              <div id="countdownTimer"></div>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </div>
+  
   <div class="pageContainer">
-    <div class="countdownContainer">
-      <div class="title"><h1>Dag<span class="black">deal</span></h1></div>
+    <!-- COUNTDOWN -->
+    <!--<div class="countdownContainer">
+      <div class="title"><h1><span class="red">Dag</span> deal</h1></div>
       <div class="countdown">
         <div id="countdownTimer"></div>
       </div>
-    </div>
+    </div>-->
 
+    <!-- PRODUCTAFBEELDING -->
     <div class="productContainer">
-      <div class="productImage">
-        <img src="images/televisie.png" />
-      </div>
+      <div class="productItem productImage">
+        <ul class="rslides">
+          <li><img src="https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_77270357/fee_786_587_png/LG-OLED55BX6LB" alt=""></li>
+          <li><img src="https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_77270359/fee_786_587_png/LG-OLED55BX6LB" alt=""></li>
+          <li><img src="https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_77270351/fee_786_587_png/LG-OLED55BX6LB" alt=""></li>
+        </ul>
 
-      <div class="productInfo">
-        <div class="productSpecs">
-          <div class="productRow">
-            <div class="info productTitle">LG 55NANO806NA</div>
-          </div>
-          <div class="productRow">
-            <div class="info">Beeldscherm</div>
-            <div class="info">55 inch</div>
-          </div>
-          <div class="productRow">
-            <div class="info">Beeldresolutie</div>
-            <div class="info">Ultra HD 4K</div>
-          </div>
-          <div class="productRow">
-            <div class="info">Type</div>
-            <div class="info">Led-tv</div>
-          </div>
-          <div class="productRow">
-            <div class="info">Smart-tv</div>
-            <div class="info">Ja</div>
-          </div>
-          <div class="productRow">
-            <div class="info productLink"><a href="#">Meer over dit product &raquo;</a></div>
-          </div>
-        </div>
-
-        <div class="stockContainer">
-          <div class="productRow">
-            <div class="productInfo">
-              <div class="box infobox availability">
-                <ul>
-                  <li class="label-instock">Online op voorraad</li>
-                  <li class="online online-ndd online-verylowstock"><span class="label-cutoff"><span class="label-cutoff-time">Voor 23:30 besteld, <strong>morgen</strong> in huis</span><a href="#" data-layer="levertijd" class="info-link"><span class="icon icon-info"></span></a></span></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="productRow">
-            <div class="productInfo">
-              <div class="priceContainer">
-                <div class="oldPrice"><span class="amount">999.-</span></div>
-                <div class="newPrice">699.-</div>
-              </div>
-              <a href="#" class="button add-to-cart"><span>Bestel 'm direct</span></a>
-            </div>
-          </div>
-        </div>
-
+        <div class="specContainer">
+          <h2>LG 55NANO806NA</h2>
+          <p>De LG OLED55BX6LB is een haarscherpe smart-tv met dun oled-beeldscherm. Dit scherm bestaat uit miljoenen pixels die per stuk in- of uitgeschakeld kunnen zijn. Dit zorgt voor een zeer heldere en contrastrijke weergave, waarbij zwart als écht zwart wordt weergegeven: de pixel staat dan gewoon uit. </p>
+          <p><a class="productLink" href="#">Meer over dit product &raquo;</a></p>
+        </div>  
         
       </div>
+
+      <!-- PRIJSCONTAINER -->
+      <div class="productItem productPrice">
+        <div class="discountbox">
+          <div class="price-old">1099</div>
+          <div class="discount">Je bespaart <span> 322</span></div>
+        </div>
+        <div class="deal-price">777.-</div>
+
+        <div class="deliveryMethod">
+          <h2>Bezorgmethode</h2>
+          <p><input type="radio" id="delivery1" name="radio-group" checked=""><label for="delivery1"><span class="headTitle">Bezorging door PostNL</span><br><span class="label-cutoff-time">Voor 23:30 besteld, <strong>morgen</strong> in huis</span><a href="#" data-layer="levertijd" class="info-link"><span class="icon icon-info"></span></a></label></p>
+          <p><input type="radio" id="delivery2" name="radio-group"><label for="delivery2"><span class="headTitle">MediaMarkt-bezorgservice</span><br>Bezorgd door jouw dichtstbijzijnde winkel<br><span class="label-cutoff-time">Voor 14:00 besteld, vandaag in huis</span></label></p>
+        </div>
+        <a href="#" class="button add-to-cart"><span>Bestel 'm direct</span></a>
+        <ul class="usp_price_sidebar">
+          <li>Gratis bezorging</li>
+          <li>Kies zelf je gewenste bezorgmoment</li>
+          <li>Gratis retourneren</li>
+          <li>100 dagen bedenktijd</li>
+        </ul> 
+      </div>
+
+      <div class="specContainersmall">
+        <h2>LG 55NANO806NA</h2>
+        <p>De LG OLED55BX6LB is een haarscherpe smart-tv met dun oled-beeldscherm. Dit scherm bestaat uit miljoenen pixels die per stuk in- of uitgeschakeld kunnen zijn. Dit zorgt voor een zeer heldere en contrastrijke weergave, waarbij zwart als écht zwart wordt weergegeven: de pixel staat dan gewoon uit. </p>
+        <p><a class="productLink" href="#">Meer over dit product &raquo;</a></p>
+      </div>  
+
+      
+      
     </div>
 
     <div class="textContainer">
-      <h2>Meteen op de hoogte zijn van de volgende dagdeal?</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae temporibus autem id dignissimos, explicabo saepe obcaecati repudiandae doloribus voluptate aspernatur consectetur accusantium dolorem tenetur sequi ab eos ratione quo voluptatum! explicabo saepe obcaecati repudiandae doloribus voluptate aspernatur consectetur accusantium dolorem tenetur sequi ab eos ratione quo voluptatum!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae temporibus autem id dignissimos, explicabo saepe obcaecati repudiandae doloribus voluptate aspernatur consectetur accusantium dolorem tenetur sequi ab eos ratione quo voluptatum! explicabo saepe obcaecati repudiandae doloribus voluptate aspernatur consectetur accusantium dolorem tenetur sequi ab eos ratione quo voluptatum!</p>
+      <h2>Profiteer alleen vandaag van de MediaMarkt dagdeal </h2>
+      <p>Geen zin om folders door te spitten om een goede aanbieding te vinden? Bekijk gewoon elke dag onze nieuwe, scherpe dagdeal. Is het dit keer een laptop, TV of krultang? Welk product het ook is, je scoort deze aanbieding alleen vandaag bij MediaMarkt! De deal van de dag varieert per dag en is 24 uur geldig. Wil je er zeker van zijn dat je geen aanbieding mist? <a href="https://www.mediamarkt.nl/webapp/wcs/stores/servlet/MultiChannelMANewsletterRegister" target="_blank">Schrijf je dan in voor onze nieuwsbrief</a> en mis niets!</p>
     </div>
 
   </div>
 
+  <!-- COUNTDOWN -->
+  <script>function ShowTime(){var e=new Date,n=23-e.getHours(),t=60-e.getMinutes(),e=60-e.getSeconds();timeLeft='<img src="images/clock-icon.svg"> Nog '+n+" uur, "+t+" minuten, "+e+" seconden",$("#countdownTimer").html(timeLeft)}var countdown;function StopTime(){clearInterval(countdown)}setInterval(ShowTime,1e3);</script>
+
+  <!-- SLIDESHOW -->
+  <script>$(".rslides").responsiveSlides({auto:!0,speed:500,timeout:4e3,nav:!0,random:!1,pause:!1,pauseControls:!0,prevText:"",nextText:"",maxwidth:"",navContainer:"",manualControls:"",namespace:"rslides",before:function(){},after:function(){}});</script>
+
+  <!-- STICKY BAR-->
   <script>
-    function ShowTime() {
-      var now = new Date();
-      var hrs = 23-now.getHours();
-      var mins = 60-now.getMinutes();
-      var secs = 60-now.getSeconds();
-      timeLeft = "<span class=\"black\">Nog</span> " +hrs+' uur, '+mins+' minuten, '+secs+' seconden';
-      $("#countdownTimer").html(timeLeft);
-    }
-    
-    var countdown;
-    function StopTime() {
-      clearInterval(countdown);
-    }
-    setInterval(ShowTime ,1000);
-  </script>
+    $(document).ready(function() {
+    var whatshouldbeleft = ($(window).width() - $(".responsive #content").width() );
+    whatshouldbeleft = whatshouldbeleft / 2;
+        if (whatshouldbeleft < 0) {
+            whatshouldbeleft = 0;
+        }
+    $(".wide, .wide").css({left: -whatshouldbeleft});
+    $(".wide, .wide").css({width: $(window).width()});
+});
+$(window).resize(function() {
+    var whatshouldbeleft = ($(window).width() - $(".responsive #content").width() );
+    whatshouldbeleft = whatshouldbeleft / 2;
+        if (whatshouldbeleft < 0) {
+            whatshouldbeleft = 0;
+        }
+        $(".wide, .wide").css({left: -whatshouldbeleft});
+        $(".wide, .wide").css({width: $(window).width()});
+});	 
+    </script>
 </body>
 </html>
