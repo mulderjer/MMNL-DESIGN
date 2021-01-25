@@ -54,6 +54,7 @@ h2 {
   font-weight: 700 !important;
   margin-top: 40px !important;
   text-transform: uppercase;
+  font-family: boldFont;
 }
 
 .header-wrapper p {
@@ -215,6 +216,18 @@ h2 {
 
 .productLink:hover {
   color: #000;
+}
+
+summary {
+  font-family: boldFont;
+  font-size: 16px;
+  background: #f2f2f2;
+  padding: 5px;
+}
+
+details {
+  background: #f2f2f2;
+  padding: 5px 10px 5px 10px;
 }
 
 /* PRIJSCONTAINER */
